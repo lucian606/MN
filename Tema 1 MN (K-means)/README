@@ -1,0 +1,34 @@
+314CC Iliescu Lucian-Marius
+
+Task 1:
+-stiind ca in fisierele respective se afla valori specifice:
+in file_params se afla un numar iar in file_points se afla o matrice
+se poate folosi functia load.
+Task 2:
+-se NC centroizi random
+-se atribuie fiecarui punct un centroid in functie de distanta euclidiana
+(radical din sumele patratelor diferentelor de coordonate):
+d(A,B)=sqrt((xA-xB)^2+(yA-yB)^2+(zA-zB)^2);
+-se calculeaza centroizii ca find centrele de clustere
+-se repeta pana cand nu se modifica pozitiile centroizilor
+Task 3:
+-pentru fiecare punct se compara distantele acestuia fata de fiecare centroid
+(distanta minima se initializeaza cu distanta fata de primul centroid)
+-daca distanta e mai mica decat cea minima se retine un index pentru a sti in
+ce cluster se incadreaza si reatribuim noua distanta minimia
+-se reprezinta punctul grafic ,culoarea se alege in functie de index
+-se repreta procesul pentru toate punctele
+Task 4:
+-se initializeaza costul cu 0
+-pentru fiecare punct se compara distantele acestuia fata de fiecare centroid
+(distanta minima se initializeaza cu distanta fata de primul centroid)
+-daca distanta e mai mica decat cea minima reatribuim noua distanta minimia
+-se adauga la cost distanta minima
+-se repeta procesul pentru toate punctele
+Task 5:
+-se ia un contor(NC) care porneste de la 1 pana la 10
+-se calculeaza NC centroizi pentru puncte
+-se calculeaza costul pentru perechea puncte centroizi
+-se retine valoarea costului de NC intr-un vector
+-se reprezinta cei doi vectori folosind plot
+ 
